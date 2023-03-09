@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 
 import loginRoutes from './login-routes.js';
 
@@ -10,6 +11,11 @@ const routes = (app) => {
 
     app.use(
         express.json(),
+        cors(
+            {
+                origin: '*'
+            }
+        ),
         loginRoutes
     );
 
