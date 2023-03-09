@@ -10,16 +10,18 @@ export default class LoginController {
             }
         
             let authenticated = false;
+            let loggedUser = null;
             for (const user of users) {
                 if (req.body.userMail === user.userMail && req.body.userPassword === user.userPassword) {
                     authenticated = true;
+                    loggedUser = { id: user._id, userMail: user.userMail, userName: user.userName };
                 }
             }
 
             if (authenticated) {
-                res.status(200).send({ message: 'Login efetuado com sucesso!' });
+                res.status(200).send({ message: 'Login efetuado com sucesso!', loggedUser });
             } else {
-                res.status(400).send({ message: 'Email e/ou senha inválidos.' });
+                res.status(400).send({ message: 'Email e/ou senha inválidos.', loggedUser });
             }
         });
     }
