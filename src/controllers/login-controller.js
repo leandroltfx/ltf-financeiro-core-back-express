@@ -11,7 +11,7 @@ export default class LoginController {
         
             let authenticated = false;
             for (const user of users) {
-                if (req.body.userEmail === user.userEmail && req.body.userPassword === user.userPassword) {
+                if (req.body.userMail === user.userMail && req.body.userPassword === user.userPassword) {
                     authenticated = true;
                 }
             }
