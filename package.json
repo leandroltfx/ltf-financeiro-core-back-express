@@ -1,5 +1,5 @@
 {
-  "name": "ltf-financeiro-back-express",
+  "name": "ltf-financeiro-core-back-express",
   "version": "0.0.1",
   "description": "API do projeto LTF Financeiro",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leandroltfx/ltf-financeiro-back-express.git"
+    "url": "git+https://github.com/leandroltfx/ltf-financeiro-core-back-express.git"
   },
   "author": "leandroltfx",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leandroltfx/ltf-financeiro-back-express/issues"
+    "url": "https://github.com/leandroltfx/ltf-financeiro-core-back-express/issues"
   },
-  "homepage": "https://github.com/leandroltfx/ltf-financeiro-back-express#readme",
+  "homepage": "https://github.com/leandroltfx/ltf-financeiro-core-back-express#readme",
   "devDependencies": {
     "nodemon": "^2.0.21"
   },
